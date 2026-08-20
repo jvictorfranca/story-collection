@@ -1,33 +1,13 @@
-import fs from "fs"
+import { getStoriesList_ByFile, getStoryById_ByFile } from "./dataFiles/GetStoriesByFile.js"
 
 export const getStoriesList = async () => {
 
-    const stories = fs.readFileSync("./src/data/dataFiles/stories.json")
-    return {
-        status: 200,
-        stories: JSON.parse(stories.toString())
-    }
+    const {stories, status} = await getStoriesList_ByFile()
+    return { status, stories }
 
 }
 
 export const getStoryById = async(id) => {
-    try{
-
-    const story= fs.readFileSync(`./src/data/dataFiles/story_${id}.txt`)
-    const response =  {
-        status: 200,
-        story: story.toString()
-    }
-
-    console.log(response)
-
-    return response
-
-} catch (e) {
-    console.error(e)
-        return {
-            status: 404,
-            story: "404 - History not found"
-        }
-    }
+    const {story, status} = await getStoryById_ByFile(id)
+    return {story, status}
 }
