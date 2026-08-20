@@ -13,7 +13,9 @@ const translations = {
     selectLanguage: "Select Language",
     english: "English",
     spanish: "Español",
-    footerText: "Made with ❤️ for young readers everywhere"
+    footerText: "Made with ❤️ for young readers everywhere",
+    storyListSubtitle: "Discover timeless tales that spark imagination and teach valuable lessons"
+
   },
   es: {
     siteTitle: "Hora del Cuento",
@@ -25,6 +27,7 @@ const translations = {
     english: "English",
     spanish: "Español",
     footerText: "Hecho con ❤️ para jóvenes lectores en todas partes",
+    storyListSubtitle: "Descubre historias atemporales que despiertan la imaginación y enseñan valiosas lecciones."
   }
 }
 
