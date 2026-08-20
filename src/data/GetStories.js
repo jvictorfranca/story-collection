@@ -1,4 +1,4 @@
-import { getStoriesList_ByFile, getStoryById_ByFile } from "./dataFiles/GetStoriesByFile.js"
+import { getStoriesList_ByFile, getStoryById_ByFile } from "./dataFiles/getStoriesByFile.js"
 
 export const getStoriesList = async () => {
 
