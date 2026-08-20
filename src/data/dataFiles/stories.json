@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "slug": "goldilocks-three-bears",
+    "language": "en",
+    "title": "Goldilocks and the Three Bears",
+    "author": "Robert Southey",
+    "content": "story_1.txt"
+  },
+  {
+    "id": 2,
+    "slug": "goldilocks-three-bears",
+    "language": "es",
+    "title": "Ricitos de Oro y los tres osos",
+    "author": "Robert Southey",
+    "content": "story_2.txt"
+  },
+  {
+    "id": 3,
+    "slug": "jack-beanstalk",
+    "language": "en",
+    "title": "Jack and the Beanstalk",
+    "author": "Traditional",
+    "content": "story_3.txt"
+  },
+  {
+    "id": 4,
+    "slug": "jack-beanstalk",
+    "language": "es",
+    "title": "Juan y las habichuelas mágicas",
+    "author": "Traditional",
+    "content": "story_4.txt"
+  },
+  {
+    "id": 5,
+    "slug": "little-red-riding-hood",
+    "language": "en",
+    "title": "Little Red Riding Hood",
+    "author": "Brothers Grimm",
+    "content": "story_5.txt"
+  },
+  {
+    "id": 6,
+    "slug": "little-red-riding-hood",
+    "language": "es",
+    "title": "Caperucita Roja",
+    "author": "Hermanos Grimm",
+    "content": "story_6.txt"
+  },
+  {
+    "id": 7,
+    "slug": "three-little-pigs",
+    "language": "en",
+    "title": "The Three Little Pigs",
+    "author": "Traditional",
+    "content": "story_7.txt"
+  },
+  {
+    "id": 8,
+    "slug": "three-little-pigs",
+    "language": "es",
+    "title": "Los tres cerditos",
+    "author": "Traditional",
+    "content": "story_8.txt"
+  },
+  {
+    "id": 9,
+    "slug": "tortoise-hare",
+    "language": "en",
+    "title": "The Tortoise and the Hare",
+    "author": "Aesop",
+    "content": "story_9.txt"
+  },
+  {
+    "id": 10,
+    "slug": "tortoise-hare",
+    "language": "es",
+    "title": "La liebre y la tortuga",
+    "author": "Esopo",
+    "content": "story_10.txt"
+  }
+]
