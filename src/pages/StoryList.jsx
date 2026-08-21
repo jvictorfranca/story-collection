@@ -3,6 +3,7 @@ import StoryCard from "../components/StoryCard"
 import { getStoriesList } from "../data/GetStories"
 import { useLanguage } from "../context/LanguageContext"
 import { Sparkles, Stars } from "lucide-react"
+import LoadingComponent from "../components/LoadingComponent"
 
 const StoryList = () => {
 
@@ -42,17 +43,10 @@ const StoryList = () => {
 
     if(loading) {
         return (
-            <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50 flex items-center-justify-center w-screen">
-
-                <div className="text-center w-screen">
-                    <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-purple-500 mx-auto mt-20"> </div>
-                    <p>Loading magical stories ...</p>
-                </div>
-            </div>
+                <LoadingComponent message={"Loading magical stories ..."}/>
             )
     }
 
-    
     return (
         <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50">
             <div className="container mx-auto px-4 py-12">

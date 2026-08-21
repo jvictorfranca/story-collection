@@ -21,7 +21,7 @@ function App() {
                 element={<StoryList />}
               />
               <Route
-                path="/story/:slug"
+                path="/story/:id"
                 element={<StoryDetail />}
               />
               <Route 
