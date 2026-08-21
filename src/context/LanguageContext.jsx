@@ -14,7 +14,9 @@ const translations = {
     english: "English",
     spanish: "Español",
     footerText: "Made with ❤️ for young readers everywhere",
-    storyListSubtitle: "Discover timeless tales that spark imagination and teach valuable lessons"
+    storyListSubtitle: "Discover timeless tales that spark imagination and teach valuable lessons",
+    returnHome: "Return to home",
+    notFoundText: "Oops! Page not found"
 
   },
   es: {
@@ -27,7 +29,9 @@ const translations = {
     english: "English",
     spanish: "Español",
     footerText: "Hecho con ❤️ para jóvenes lectores en todas partes",
-    storyListSubtitle: "Descubre historias atemporales que despiertan la imaginación y enseñan valiosas lecciones."
+    storyListSubtitle: "Descubre historias atemporales que despiertan la imaginación y enseñan valiosas lecciones.",
+    returnHome: "Volver al inicio",
+    notFoundText: "¡Ups! Página no encontrada"
   }
 }
 
