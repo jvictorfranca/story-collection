@@ -4,6 +4,7 @@ import { useLanguage } from "../context/LanguageContext"
 import { getStoryById, getStoryDataById } from "../data/GetStories"
 import LoadingComponent from "../components/LoadingComponent"
 import { ArrowLeft, BookOpen, User } from "lucide-react"
+import getStoryColor from "../utils/getStoryColors"
 
 const StoryDetail = () => {
 
@@ -80,12 +81,12 @@ const StoryDetail = () => {
         
         <div>
 
-            <div className="flex gap-4">
+            <div className={"flex gap-4 justify-center py-20 bg-gradient-to-br mb-10 " + getStoryColor(storyData.slug)}>
                 <BookOpen className="w-16 h-16 drop-shadow-lg"/>
                 <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">{storyData?.title || "Title"}</h1>
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex gap-4 mb-5">
                 <User className="w-5 h-5 inline-flex"/>
                 <span>{t("author")}: {storyData?.author || "Author"}</span>
 

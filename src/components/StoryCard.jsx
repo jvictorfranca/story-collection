@@ -1,21 +1,10 @@
 import { BookOpen, User } from "lucide-react"
 import { useLanguage } from "../context/LanguageContext"
 import { Link } from "react-router-dom"
+import getStoryColor from "../utils/getStoryColors"
 
 const StoryCard = ({story}) => {
-    
-    const getStoryColor = (slug) => {
-    const colors = {
-    "tortoise-hare": "from-green-400 to-blue-500",
-    "little-red-riding-hood": "from-red-400 to-pink-500",
-    "three-little-pigs": "from-yellow-400 to-blue-500",
-    "goldilocks-three-bears": "from-amber-400 to-yellow-500",
-    "jack-beanstalk": "from-emerald-400 to-green-500"
-}
 
-
-return colors[slug] || "from-purple-400 to-pink-500"
-}
 
     const {t} = useLanguage()
     return (
