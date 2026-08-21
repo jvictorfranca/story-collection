@@ -93,9 +93,23 @@ const StoryDetail = () => {
             </div>
 
         </div>
-        <p>
-            {story}
-        </p>
+        <div className="container mx-auto px-4 py-12">
+            <div className="max-w-4xl mx-auto">
+                <div className="bg-white rounded-3x-l shadow-2xl p-8 md:p-12">
+                    {story.replaceAll("\\n", "\n").split("\n").map((paragraph, index) => {
+                        return(
+                            <p
+                             key={index}
+                             className="text-gray-800 leading-relaxed mb-6 text-lg first-letter:font-bold first-letter:text-2xl first-letter:text-purple-800"
+                            >{paragraph}</p>
+                        )
+                    }) }
+                </div>
+
+            </div>
+            <div>
+            </div>
+        </div>
         <Link to="/">
         
             <div className="inline-flex gap-4 px-6 py-3 rounded-full bg-purple-500 ml-4 mt-10 hover:bg-purple-700 hover:translate-y-2 transition-colors">
